@@ -1,4 +1,4 @@
-package org.example
+package org.devtest
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.SaveMode
 
