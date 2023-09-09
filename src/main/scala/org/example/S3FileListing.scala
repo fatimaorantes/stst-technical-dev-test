@@ -6,20 +6,6 @@ import org.apache.spark.sql.Row
 import org.apache.spark.sql.Column
 import org.apache.log4j.{Level,Logger}
 
-/**
- * @author ${user.name}
- */
-object App {
-  
-  def foo(x : Array[String]) = x.foldLeft("")((a,b) => a + b)
-  
-  def main(args : Array[String]) {
-    println( "Hello World!" )
-    println("concat arguments = " + foo(args))
-  }
-
-}
-
  object S3FileListing {
   def main(args: Array[String]): Unit = {
     // Set the log level to ERROR (or another desired level)

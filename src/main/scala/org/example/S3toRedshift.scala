@@ -1,17 +1,14 @@
 package org.example
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.SaveMode
-import org.apache.spark.sql.functions._
-import org.apache.spark.sql.types._
 
-
-object S3toRS {
+object S3toRedshift {
   def main(args: Array[String]): Unit = {
 
     // Initialize SparkSession
     val spark = SparkSession.builder()
       .master("local[1]")
-      .appName("S3toRS")
+      .appName("S3toRedshift")
       .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
       .config("spark.hadoop.fs.s3a.access.key", "**************IMT")
       .config("spark.hadoop.fs.s3a.secret.key", "**********************************Ffdx/")
