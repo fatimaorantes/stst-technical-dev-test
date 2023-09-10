@@ -117,3 +117,24 @@ fact_activity_job
 
 ![alt text](https://github.com/fatimaorantes/stst-technical-dev-test/blob/master/img/fact_act_job_model.png)
 
+## e) Project structure
+
+- [technical-dev-test] - s3
+  - raw
+    - jobs
+  - stg
+    - applicant
+  - presentation
+    - dim-advert
+    - dim-applicant
+    - dim-benefit
+    - dim-company
+    - dim-date
+    - dim-job
+    - dim-skill
+    - bridge-applicant-job
+    - bridge-benefit-job
+    - bridge-skill-applicant
+    - fact-act-app
+    - fact-act-job
+
