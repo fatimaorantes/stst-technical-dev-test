@@ -7,12 +7,26 @@ The following is the analysis for each section:
 
 **Job Data.**
 This data includes descriptive information such as title, location, the company that posted the job (without an identifier, only the company name), the sector within the company where the job is available, and the benefits offered in the hiring process.
+| Field             | # of values |
+|-------------------|-------------|
+| distinct job id   | 29900       |
+| distinct benefits | 5           |
 
 **Advert.**
 This section includes an alphanumeric identifier, which is constant, because tell us that the job lived in the site. It also contains a URL and information about the advert's status, including active days, publication date, and current status.
 
+| Field           | # of values                                   | Min value  | Max value  |
+|-----------------|-----------------------------------------------|------------|------------|
+| publicationDate | 29900                                         | 2010-08-30 | 2020-08-30 |
+| status          | active (9832) inactive (9968) deleted (10100) |            |            |
+
 **Applicants.**
 This list includes descriptive information about every application the job received, such as the date of application, the applicant's name, age, and relevant skills.
+
+| Field           | # of values | Min value  | Max value  | Avg value |
+|-----------------|-------------|------------|------------|-----------|
+| age             | 168824      | 18         | 65         | 42        |
+| applicationDate | 168824      | 2010-08-31 | 2020-09-27 |           |
 
 ## b)	Dataflow
 
